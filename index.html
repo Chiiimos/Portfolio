@@ -5,93 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thweyrhone Gallego | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" sizes="16x16" href=""> 
+    <link rel="icon" type="image/png" sizes="16x16" href="Melriclogo.png"> 
 </head>
-<body>
-    <header>
-        <div>
-            <nav>
-                <div>
-                    <img src="Melriclogo.png" alt="Chi_logo">
-                        <ul>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <img src="Melriclogo.png" alt="Chi_logo" class="logo">
+                        <ul class="nav-links">
                             <li><a href="#hero">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#Contacts">Contacts</a></li>
                         </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- starting page -->
-    <Section id="hero">
-        <div>
-            <div>
-                <h1>Hi, I'm Thweyrhone Gallego</h1>
-                <p></p>
-                <a href="#projects" class="btn">My Projects</a>
+                </nav>
             </div>
-        </div>
-    </Section>
-    <!-- about me -->
-    <section>
+        </header>
+        <!-- starting page -->
+        <Section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm Thweyrhone Melric N. Gallego</h1>
+                    <p>A passionate frontend developer specializing in modern responsive web design</p>
+                    <a href="#projects" class="btn">My Projects</a>
+                </div>
+            </div>
+        </Section>
+        <!-- about me -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title ">About me</h2>
+                <div class="about-cont">
+                    <div class="about-text">
+                        <p>Hello, I'm Thweyrhone, A junior developer with experiences towarads HTML and CSS, I usually do more modern types of website</p>
+                        <p>My passion is creating intuitive user experiences with clean, efficient code. I enjoy solving complex problems and turning ideas into reality through web development.</p>
+                        <a href="#contact" class="btn">Get In Touch</a>
+                    </div>
+                    <div class="me-image">
+                        <img src="MELRICPIC.jpg" alt="Pogi mel">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title ">My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <a href="https://product-page-olive-two.vercel.app" target="_blank"><img src="Color_Pro_product.png" alt="Product-page"></a>
+                        </div>
+                        <div class="project-info">
+                            <h3>Product Page</h3>
+                            <p>A polished product landing page designed to present item details with clarity and focus. The project reflects effective use of layout, visual hierarchy, and call-to-action placement suitable for showcasing products in a modern web environment.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <a href="https://tribute-pi-liard.vercel.app" target="_blank"><img src="TRIBUTE.png" alt="Pogipapa"></a>
+                        </div>
+                        <div class="project-info">
+                            <h3>Tribute Page</h3>
+                            <p>A clean and professionally presented tribute page emphasizing balanced layout, structured content, and refined typography. It demonstrates the ability to build simple, informative, and visually coherent single-page websites.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <a href="https://technical-documentation-page-alpha-three.vercel.app" target="_blank"><img src="Docspage.png" alt="Dcospage"></a>  
+                        </div>
+                        <div class="project-info">
+                            <h3>Documentaion Page</h3>
+                            <p>A well-organized technical documentation page featuring a fixed navigation panel and clearly segmented content sections. This project highlights strong layout planning, readability-focused design, and an approach aligned with industry documentation standards.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <a href="https://survey-red-tau.vercel.app/" target="_blank"><img src="Survey.png" alt="Survey Page"></a>
+                        </div>
+                        <div class="project-info">
+                            <h3>Surevy Page</h3>
+                            <p>A structured and responsive survey interface designed to collect user input efficiently. The project demonstrates clear form organization, consistent styling, and a streamlined user experience suitable for feedback or data-gathering applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Contact information -->
+    <section id="Contacts"> 
         <div class="container">
-            <h2 class="aboutme">About me</h2>
-            <div class="about-cont">
-                <div class="about-text">
-                    <p></p>
-                    <a href="#contact" class="btn">Get In Touch</a>
-                </div>
-                <div class="me-image">
-                    <img src="" alt="">
-                </div>
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-info">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="Message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
-    <!-- Projects -->
-    <section id="projects">
+    <!-- Footer -->
+    <footer>
         <div class="container">
-             <h2 class="Projects-page">My Projects</h2>
-             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Color_Pro_product.png" alt="Product-page">
-                    </div>
-                    <div class="project-info">
-                        <h3>Product Page</h3>
-                        <p>A polished product landing page designed to present item details with clarity and focus. The project reflects effective use of layout, visual hierarchy, and call-to-action placement suitable for showcasing products in a modern web environment.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="TRIBUTE.png" alt="Pogipapa">
-                    </div>
-                    <div class="product-info">
-                        <h3>Tribute Page</h3>
-                        <p>A clean and professionally presented tribute page emphasizing balanced layout, structured content, and refined typography. It demonstrates the ability to build simple, informative, and visually coherent single-page websites.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Docspage.png" alt="Dcospage">
-                    </div>
-                    <div class="product-info">
-                        <h3>Documentaion Page</h3>
-                        <p>A well-organized technical documentation page featuring a fixed navigation panel and clearly segmented content sections. This project highlights strong layout planning, readability-focused design, and an approach aligned with industry documentation standards.</p>
-                    </div>
-                    
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="Survey.png" alt="Survey Page">
-                    </div>
-                    <div class="product-info">
-                        <h3>Surevy Page</h3>
-                        <p>A structured and responsive survey interface designed to collect user input efficiently. The project demonstrates clear form organization, consistent styling, and a streamlined user experience suitable for feedback or data-gathering applications.</p>
-                    </div>
-                </div>
-             </div>
+            <p>&copy; 2024 Thweyrhone Gallego. All rights reserved.</p>
         </div>
-    </section>
-</body>
+    </footer>
+        <a href="#home" class="back-to-top">↑</a>
+
+        <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                if (targetId === '#home') {
+                    // Scroll to top for back-to-top button
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    </body>
 </html>
